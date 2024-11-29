@@ -34,6 +34,7 @@ export function AppDownloadLinks() {
                   <Balancer>
                     <H2 className={"border-none"}>Download Our App</H2>
                   </Balancer>
+                  {/*  */}
                   <p className="text-sm">
                     <Balancer>
                       Are you tired of spending hours searching for the perfect
