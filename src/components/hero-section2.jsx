@@ -26,7 +26,7 @@ export default function Hero() {
             <div className="flex flex-col justify-center space-y-8 text-center lg:text-left">
               <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl md:text-6xl">
                 <span className="block xl:inline">Elevate Your</span>{" "}
-                <span className="block text-primary xl:inline">
+                <span className="block text-white xl:inline">
                   Cranes Performance
                 </span>
               </h1>
