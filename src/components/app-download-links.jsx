@@ -14,22 +14,22 @@ export function AppDownloadLinks() {
           <div className="relative">
             <div className="grid md:grid-cols-2">
               {/* mockup */}
-              <div className="-mt-10 flex items-center justify-center">
-                <div className="relative w-[250px] sm:w-[300px]">
+              <div className="-mt-20 flex items-center justify-center">
+                <div className="relative">
                   <FadeUp x={-100} y={0} duration={1}>
-                    <video
-                      src="/videos/banner-mobile.mp4"
-                      className="rounded-3xl border-[14px] border-gray-700"
-                      autoPlay
-                      loop
-                      muted
-                    ></video>
+                    <Image
+                      src="/phone-mockup.png"
+                      className="rounded-3xl"
+                      width={500}
+                      height={500}
+                      alt="The Parts App"
+                    />
                   </FadeUp>
                 </div>
               </div>
 
               {/* links */}
-              <div className="relative mt-10 flex flex-col justify-center rounded-lg bg-primary px-4 py-10 md:m-0 md:bg-transparent md:p-0">
+              <div className="relative flex flex-col justify-center rounded-lg bg-primary px-4 py-10 md:bg-transparent md:p-0">
                 <div className="text-center text-white md:text-start">
                   <Balancer>
                     <H2 className={"border-none"}>Download Our App</H2>

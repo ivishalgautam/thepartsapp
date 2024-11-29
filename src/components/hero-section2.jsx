@@ -9,8 +9,8 @@ export default function Hero() {
     <section className="bg-gradient-to-b from-primary to-white">
       <Navbar />
       <div className="relative">
-        <div className="container relative mx-auto flex min-h-[calc(100vh-82.53px)] items-end px-4 pt-12 sm:px-6 lg:px-8 lg:pt-16">
-          <div className="grid items-center gap-8 lg:grid-cols-2 lg:gap-16">
+        <div className="container relative mx-auto flex pt-10">
+          <div className="mx-auto grid gap-8 lg:grid-cols-2 lg:gap-16">
             <div className="order-last flex justify-center">
               <div className="w-[250px] sm:w-[300px]">
                 <video
@@ -23,7 +23,7 @@ export default function Hero() {
               </div>
             </div>
 
-            <div className="space-y-8 text-center lg:text-left">
+            <div className="flex flex-col justify-center space-y-8 text-center lg:text-left">
               <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl md:text-6xl">
                 <span className="block xl:inline">Elevate Your</span>{" "}
                 <span className="block text-primary xl:inline">
