@@ -4,8 +4,15 @@ import ProductsWithFilter from "@/components/products-with-filter";
 import { useQuery } from "@tanstack/react-query";
 import http from "@/utils/http";
 import { endpoints } from "@/utils/endpoints";
-import { useSearchParams } from "next/navigation";
-import { Suspense } from "react";
+// import { useSearchParams } from "next/navigation";
+const useSearchParams = dynamic(
+  () => import("next/navigation").then((data) => data.useSearchParams),
+  {
+    ssr: false,
+    loading: () => "loading...",
+  },
+);
+import dynamic from "next/dynamic";
 
 const fetchProducts = async (page = 1, limit, categories, brands, part) => {
   const urlParams = new URLSearchParams();
@@ -45,17 +52,15 @@ export default function Page() {
   });
 
   return (
-    <Suspense fallback={"loading..."}>
-      <section className="py-6">
-        <div className="container">
-          <div>
-            <ProductsWithFilter data={data?.data} />
-          </div>
-          <div>
-            <PaginationControls total_page={data?.total_page} />
-          </div>
+    <section className="py-6">
+      <div className="container">
+        <div>
+          <ProductsWithFilter data={data?.data} />
         </div>
-      </section>
-    </Suspense>
+        <div>
+          <PaginationControls total_page={data?.total_page} />
+        </div>
+      </div>
+    </section>
   );
 }
