@@ -64,7 +64,7 @@ export default function Hero() {
             </div>
           </div>
         </div>
-        <div className="absolute left-0 top-full flex h-24 w-full flex-col items-center justify-center bg-primary px-2 text-white sm:h-16 sm:flex-row sm:gap-2">
+        <div className="absolute left-0 top-full flex h-24 w-full flex-col items-center justify-center gap-1 bg-primary px-2 text-white sm:h-16 sm:flex-row sm:gap-2">
           <div className="text-center text-xs sm:text-base">
             Download Now the trusted APP for Earthmoving Spare Parts Worldwide
           </div>
