@@ -9,10 +9,10 @@ export default function Hero() {
     <section className="bg-gradient-to-b from-primary to-white">
       <Navbar />
       <div className="relative">
-        <div className="container relative mx-auto min-h-[calc(100vh-82.53px)] px-4 pt-12 sm:px-6 lg:px-8 lg:pt-16">
+        <div className="container relative mx-auto flex min-h-[calc(100vh-82.53px)] items-end px-4 pt-12 sm:px-6 lg:px-8 lg:pt-16">
           <div className="grid items-center gap-8 lg:grid-cols-2 lg:gap-16">
             <div className="order-last flex justify-center">
-              <div className="w-[250px] translate-y-[15px] sm:w-[300px]">
+              <div className="w-[250px] sm:w-[300px]">
                 <video
                   src="/videos/banner-mobile.mp4"
                   className="rounded-t-3xl"
