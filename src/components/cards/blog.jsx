@@ -10,13 +10,13 @@ export default function BlogCard() {
     <div className="group overflow-hidden rounded-lg bg-white shadow">
       <Link href={`#`}>
         <div>
-          <figure className="before:via-20 relative before:absolute before:left-0 before:top-0 before:z-50 before:h-full before:w-full before:bg-gradient-to-tr before:from-primary before:from-10% before:via-30% before:to-90%">
+          <figure className="before:via-20 relative w-full before:absolute before:left-0 before:top-0 before:z-50 before:h-full before:w-full before:bg-gradient-to-tr before:from-primary before:from-10% before:via-30% before:to-90%">
             <Image
               src={`/banners/banner-1.jpg`}
               width={500}
               height={500}
               alt={""}
-              className="aspect-video"
+              className="aspect-video h-full w-full object-cover"
             />
           </figure>
         </div>

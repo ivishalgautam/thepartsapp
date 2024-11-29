@@ -25,7 +25,7 @@ export default function FeaturedProducts() {
   // if (isLoading) return <Spinner />;
   // if (isError) return error?.message ?? "error";
   return (
-    <div className="py-10">
+    <div className="mt-16 py-10">
       <div className="container space-y-4">
         <SectionHeading
           title="Featured Products"
