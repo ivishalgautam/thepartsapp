@@ -3,6 +3,8 @@ import Link from "next/link";
 import IPhone15MockUp from "./ui/iphone-15-mockup";
 import Navbar from "./Navbar";
 import SearchModal from "./search-modal";
+import { appDownloadLinks } from "@/data/static";
+import Balancer from "react-wrap-balancer";
 
 export default function Hero() {
   return (
@@ -25,15 +27,19 @@ export default function Hero() {
 
             <div className="flex flex-col justify-center space-y-8 text-center lg:text-left">
               <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl md:text-6xl">
-                <span className="block xl:inline">Elevate Your</span>{" "}
-                <span className="block text-white xl:inline">
-                  Cranes Performance
-                </span>
+                <Balancer>
+                  <span className="block xl:inline">
+                    Your Trusted Partner for High-Quality
+                  </span>{" "}
+                </Balancer>
+                <span className="block text-white xl:inline">JCB Parts</span>
               </h1>
-              <p className="mx-auto mt-3 max-w-md text-lg text-gray-500 sm:text-xl md:mt-5 md:max-w-3xl">
-                Find the perfect spare parts to keep your cranes operating at
-                peak efficiency. Quality components, fast delivery.
-              </p>
+              <Balancer>
+                <p className="mx-auto mt-3 max-w-md text-lg text-gray-500 sm:text-xl md:mt-5 md:max-w-3xl">
+                  Delivering Genuine, Durable, and Reliable JCB Components to
+                  Global Markets
+                </p>
+              </Balancer>
               <div className="flex items-center justify-center lg:justify-start">
                 <SearchModal />
               </div>
@@ -58,7 +64,43 @@ export default function Hero() {
             </div>
           </div>
         </div>
-        <div className="absolute left-0 top-full h-16 w-full bg-primary"></div>
+        <div className="absolute left-0 top-full flex h-24 w-full flex-col items-center justify-center bg-primary px-2 text-white sm:h-16 sm:flex-row sm:gap-2">
+          <div className="text-center text-xs sm:text-base">
+            Download Now the trusted APP for Earthmoving Spare Parts Worldwide
+          </div>
+          <div className="flex items-center justify-center">
+            <a
+              href={appDownloadLinks.googlePlayStore}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex flex-shrink-0 items-center justify-center"
+            >
+              <figure className="">
+                <Image
+                  src={"/icons/google-play-store.svg"}
+                  width={100}
+                  height={100}
+                  alt="Google Play Store"
+                />
+              </figure>
+            </a>
+            <a
+              href={appDownloadLinks.googlePlayStore}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex flex-shrink-0 items-center justify-center"
+            >
+              <figure className="">
+                <Image
+                  src={"/icons/app-store.svg"}
+                  width={100}
+                  height={100}
+                  alt="App Store"
+                />
+              </figure>
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   );
