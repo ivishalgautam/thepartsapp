@@ -14,7 +14,7 @@ async function fetchBlogs() {
 
 export default function BlogsSection() {
   return (
-    <div className="bg-gradient-to-b from-primary/20 to-white">
+    <div className="bg-gradient-to-b from-primary/20 to-transparent">
       <div className="container space-y-12 py-16 pb-16">
         <SectionHeading
           title="Our Blogs"

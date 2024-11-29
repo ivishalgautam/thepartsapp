@@ -7,14 +7,14 @@ import Balancer from "react-wrap-balancer";
 
 export function AppDownloadLinks() {
   return (
-    <section className="relative pb-10 before:absolute before:top-44 before:h-56 before:w-full before:-translate-y-1/2 before:bg-primary md:py-10 md:before:top-1/2">
+    <section className="relative bg-primary pb-10 before:absolute before:top-44 before:w-full before:-translate-y-1/2 before:bg-primary md:bg-transparent md:py-10 md:before:top-1/2 md:before:h-56">
       <div className="px-2 sm:px-6 lg:px-8">
         <div className="relative mx-auto max-w-7xl">
           <h2 className="mb-8 text-center text-3xl font-extrabold text-gray-900"></h2>
           <div className="relative">
             <div className="grid md:grid-cols-2">
               {/* mockup */}
-              <div className="flex items-center justify-center">
+              <div className="-mt-10 flex items-center justify-center">
                 <div className="relative w-[250px] sm:w-[300px]">
                   <FadeUp x={-100} y={0} duration={1}>
                     <video
