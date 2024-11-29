@@ -28,9 +28,9 @@ export default function Navbar() {
     <div className="flex items-center justify-center bg-transparent">
       <div className="container">
         <div className="flex items-center justify-between">
-          <div className="p-4">
-            <Link href={"/"} className="inline-block rounded-lg bg-white p-2">
-              <Image width={100} height={100} src={"/logo.png"} alt="logo" />
+          <div className="p-4 pt-0">
+            <Link href={"/"} className="inline-block rounded-b-lg bg-white p-2">
+              <Image width={150} height={150} src={"/logo.png"} alt="logo" />
             </Link>
           </div>
           <nav className="hidden md:block">

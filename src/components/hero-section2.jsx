@@ -1,10 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
-import IPhone15MockUp from "./ui/iphone-15-mockup";
 import Navbar from "./Navbar";
 import SearchModal from "./search-modal";
 import { appDownloadLinks } from "@/data/static";
 import Balancer from "react-wrap-balancer";
+
+import { Raleway } from "next/font/google";
+import { cn } from "@/lib/utils";
+
+const raleway = Raleway({ weight: ["400", "500", "600"], subsets: ["latin"] });
 
 export default function Hero() {
   return (
@@ -25,17 +29,22 @@ export default function Hero() {
               </div>
             </div>
 
-            <div className="flex flex-col justify-center space-y-8 text-center lg:text-left">
-              <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl md:text-6xl">
+            <div className="flex flex-col justify-center space-y-6 text-center lg:text-left">
+              <h1
+                className={cn(
+                  "text-4xl font-bold !leading-[60px] tracking-wide text-gray-900 sm:text-4xl md:text-5xl",
+                  raleway.className,
+                )}
+              >
                 <Balancer>
-                  <span className="block xl:inline">
+                  <span className=" ">
                     Your Trusted Partner for High-Quality
                   </span>{" "}
+                  <span className="text-white">JCB Parts</span>
                 </Balancer>
-                <span className="block text-white xl:inline">JCB Parts</span>
               </h1>
               <Balancer>
-                <p className="mx-auto mt-3 max-w-md text-lg text-gray-500 sm:text-xl md:mt-5 md:max-w-3xl">
+                <p className="mx-auto mt-1 max-w-md text-lg text-gray-500 sm:text-xl md:mt-2 md:max-w-3xl">
                   Delivering Genuine, Durable, and Reliable JCB Components to
                   Global Markets
                 </p>
