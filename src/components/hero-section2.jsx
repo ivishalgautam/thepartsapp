@@ -77,7 +77,7 @@ export default function Hero() {
           <div className="text-center text-xs sm:text-base">
             Download Now the trusted APP for Earthmoving Spare Parts Worldwide
           </div>
-          <div className="flex items-center justify-center">
+          <div className="flex items-center justify-center gap-1">
             <a
               href={appDownloadLinks.googlePlayStore}
               target="_blank"
